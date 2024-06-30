@@ -1,0 +1,493 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+.nav__top {
+  width: 100%;
+  height: 58px;
+  background-color: #131921;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 12px 8px 12px 8px;
+  gap: 20px;
+}
+.nav__top .amazon {
+  width: 104px;
+  height: 40px;
+}
+.nav__top .amazon:hover {
+  border: solid 1px white;
+  border-radius: 1px;
+}
+.nav__top .enviar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav__top .enviar .venezuela {
+  display: flex;
+  flex-direction: row;
+}
+.nav__top .enviar .venezuela img {
+  width: 20px;
+  height: 20px;
+}
+.nav__top .enviar:hover {
+  border: solid 1px white;
+  border-radius: 1px;
+}
+.nav__top div {
+  display: flex;
+}
+.nav__top .navegador {
+  display: flex;
+  width: 700px;
+  height: 50px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+.nav__top .navegador input {
+  width: 700px;
+  height: 40px;
+  position: relative;
+}
+.nav__top .navegador img {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  padding: 6px;
+  background-color: #f3a847;
+  border: 0;
+  border-radius: 0px 5px 5px 0px;
+}
+.nav__top .navegador select {
+  background-color: #e6e6e6;
+  border-radius: 5px 0px 0px 5px;
+  border: 0;
+  padding: 11px;
+  color: #525452;
+}
+.nav__top .indent {
+  display: flex;
+  flex-direction: column;
+}
+.nav__top .indent:hover {
+  border: solid 1px white;
+  border-radius: 1px;
+}
+.nav__top .pedidos {
+  display: flex;
+  flex-direction: column;
+}
+.nav__top .pedidos:hover {
+  border: solid 1px white;
+  border-radius: 1px;
+}
+.nav__top .carrito {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+}
+.nav__top .carrito img {
+  width: 30px;
+  height: 30px;
+}
+.nav__top .carrito:hover {
+  border: solid 1px white;
+  border-radius: 1px;
+}
+.nav__sub {
+  width: 100%;
+  height: 34px;
+  background-color: #232F3E;
+  display: flex;
+  flex-direction: row;
+  padding: 12px 14px 8px 14px;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+.nav__sub .todo {
+  display: flex;
+  gap: 2px;
+}
+.nav__sub .todo__menu {
+  position: relative;
+  z-index: 10;
+  width: 22px;
+  height: 22px;
+}
+.nav__sub .todo:hover {
+  border: solid 1px white;
+  border-radius: 1px;
+}
+.nav__sub p {
+  padding: 0px 0px 4px 0px;
+  color: white;
+  font-size: 15px;
+  font-weight: 200;
+}
+.nav__sub p:hover {
+  border: solid 1px white;
+  border-radius: 1px;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 800px;
+  background: rgb(23, 21, 43);
+  background: linear-gradient(61deg, rgb(23, 21, 43) 0%, rgb(48, 45, 82) 53%, rgb(66, 65, 85) 53%, rgb(231, 255, 250) 100%);
+}
+main .principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+main .principal .titulo {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30px;
+  left: 19%;
+}
+main .principal .titulo h1 {
+  color: #c8c3f8;
+  font-size: 50px;
+  font-weight: 800;
+}
+main .principal .imagenes-principal {
+  display: flex;
+}
+main .principal #xbox {
+  width: 200px;
+  height: 200px;
+  top: 0;
+  right: 40%;
+  position: absolute;
+}
+main .principal #pcgamer {
+  width: 200px;
+  height: 200px;
+  top: 0;
+  right: 30%;
+  position: absolute;
+}
+main .products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+main .products__1 {
+  background-color: white;
+  border: 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 300px;
+  height: 380px;
+  padding: 20px 15px;
+}
+main .products__1 h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+main .products__1 .enlace {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  height: fit-content;
+}
+main .products__1 .enlace a {
+  text-decoration: none;
+  color: blue;
+  font-size: 13px;
+}
+main .products__1 .enlace a:hover {
+  color: orange;
+}
+main .products__2 {
+  background-color: white;
+  border: 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 300px;
+  height: 380px;
+  padding: 20px 15px;
+}
+main .products__2 .play5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  width: 100%;
+  height: 240px;
+}
+main .products__2 .play5 .consola {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+main .products__2 .play5 .consola img {
+  width: 140px;
+  height: 200px;
+}
+main .products__2 .play5 .consola p {
+  color: black;
+}
+main .products__2 .play5 .control {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+main .products__2 .play5 .control img {
+  width: 140px;
+  height: 110px;
+}
+main .products__2 .play5 .control p {
+  color: black;
+}
+main .products__2 .enlace {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  height: fit-content;
+}
+main .products__2 .enlace a {
+  text-decoration: none;
+  color: blue;
+  font-size: 13px;
+}
+main .products__2 .enlace a:hover {
+  color: orange;
+}
+main .products__3 {
+  background-color: white;
+  border: 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 300px;
+  height: 380px;
+  padding: 20px 15px;
+}
+main .products__3 .audifonos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .products__3 .audifonos img {
+  width: 200px;
+  height: 150px;
+}
+main .products__3 .audifonos p {
+  color: black;
+}
+main .products__3 .audifonos .miniaudifonos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+main .products__3 .audifonos .miniaudifonos .HP {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .products__3 .audifonos .miniaudifonos .HP img {
+  width: 100px;
+  height: 100px;
+}
+main .products__3 .audifonos .miniaudifonos .HP p {
+  color: black;
+}
+main .products__3 .audifonos .miniaudifonos .JBL {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .products__3 .audifonos .miniaudifonos .JBL img {
+  width: 100px;
+  height: 100px;
+}
+main .products__3 .audifonos .miniaudifonos .JBL p {
+  color: black;
+}
+main .products__3 .enlace {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  height: fit-content;
+}
+main .products__3 .enlace a {
+  text-decoration: none;
+  color: blue;
+  font-size: 13px;
+}
+main .products__3 .enlace a:hover {
+  color: orange;
+}
+main .products__4 {
+  background-color: white;
+  border: 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 300px;
+  height: 380px;
+  padding: 20px 15px;
+}
+main .products__4 .iphone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .products__4 .iphone img {
+  width: 260px;
+  height: 240px;
+}
+main .products__4 .enlace {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  height: fit-content;
+}
+main .products__4 .enlace a {
+  text-decoration: none;
+  color: blue;
+  font-size: 13px;
+}
+main .products__4 .enlace a:hover {
+  color: orange;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+footer .inicio-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #37475A;
+  width: 100%;
+  height: 40px;
+}
+footer .inicio-footer h3 {
+  font-size: 15px;
+  font-weight: 600;
+}
+footer .info {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: row;
+  background-color: #232F3E;
+  padding: 40px 40px;
+  gap: 120px;
+}
+footer .info div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 160px;
+}
+footer .info div h3 {
+  font-size: 14px;
+}
+footer .info div a {
+  text-decoration: none;
+  color: #BFCFDD;
+  font-size: 13px;
+}
+footer .info div a:hover {
+  text-decoration: underline;
+}
+footer .logo-amazon {
+  background-color: #232F3E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border-top: solid 1px #37475A;
+}
+footer .logo-amazon img {
+  width: 120px;
+  height: 48px;
+}
+footer .final-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #131A22;
+  height: 200px;
+}
+footer .final-footer div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+footer .final-footer div a {
+  text-decoration: none;
+  color: #BFCFDD;
+  font-size: 13px;
+}
+footer .final-footer div a:hover {
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 12px;
+  color: white;
+  font-weight: 800;
+}
+
+p {
+  font-size: 11px;
+  color: #a8a79a;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,11 @@
+@mixin letra($tamano, $color, $grosor)
+    font-size: $tamano
+    color: $color
+    font-weight: $grosor
+
+h3
+    @include letra($tamano: 12px , $color: white, $grosor: 800)
+    
+p
+    @include letra($tamano: 11px, $color: #a8a79a, $grosor: 600)
+       

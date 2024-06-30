@@ -1,0 +1,160 @@
+main
+    position: relative
+    display: flex
+    flex-direction: column
+    width: 100%
+    height: 800px
+    background: rgb(23,21,43)
+    background: linear-gradient(61deg, rgba(23,21,43,1) 0%, rgba(48,45,82,1) 53%, rgba(66,65,85,1) 53%, rgba(231,255,250,1) 100%)
+    .principal
+        display: flex
+        justify-content: center
+        align-items: center 
+        padding: 50px
+        position: relative
+        width: 100%
+        height: 250px
+        .titulo
+            display: flex
+            flex-direction: column
+            position: absolute
+            top: 30px
+            left: 19%
+            h1
+                color: #c8c3f8
+                font-size: 50px
+                font-weight: 800
+        .imagenes-principal
+            display: flex
+        #xbox
+            width: 200px
+            height: 200px
+            top: 0
+            right: 40%
+            position: absolute
+        #pcgamer
+            width: 200px
+            height: 200px
+            top: 0
+            right: 30%
+            position: absolute
+
+    .products
+        display: flex
+        flex-direction: row
+        justify-content: space-evenly
+        align-items: center
+        gap: 10px
+
+        @mixin product()
+            background-color: white
+            border: 0
+            border-radius: 5px
+            display: flex
+            flex-direction: column
+            gap: 18px
+            width: 300px
+            height: 380px
+            padding: 20px 15px
+
+        @mixin enlac()
+            display: flex
+            justify-content: start
+            align-items: start 
+            width: 100%
+            height: fit-content
+            a
+                text-decoration: none
+                color: blue
+                font-size: 13px
+            a:hover
+                color: orange
+            
+        &__1
+            @include product()
+            h2
+                font-size: 22px
+                font-weight: 600
+            .enlace
+                @include enlac()
+        &__2
+            @include product()
+            .play5
+                display: flex
+                flex-direction: row
+                justify-content: center
+                align-items: end 
+                width: 100%
+                height: 240px
+                .consola
+                    display: flex
+                    flex-direction: column
+                    justify-items: center
+                    align-items: center
+                    img
+                        width: 140px
+                        height: 200px
+                    p
+                        color: black
+                .control
+                    display: flex
+                    flex-direction: column
+                    justify-items: center
+                    align-items: center 
+                    img
+                        width: 140px
+                        height: 110px
+                    p
+                        color: black
+            .enlace
+                @include enlac()
+        &__3
+            @include product()
+            .audifonos
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-direction: column
+                img
+                    width: 200px
+                    height: 150px
+                p
+                    color: black
+                .miniaudifonos
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+                    justify-content: space-around
+                    .HP
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        img
+                            width: 100px
+                            height: 100px
+                        p
+                            color: black
+                    .JBL
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        img
+                            width: 100px
+                            height: 100px
+                        p
+                            color: black
+            .enlace
+                @include enlac()
+        &__4
+            @include product()
+            .iphone
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-direction: column
+                img
+                    width: 260px
+                    height: 240px
+            .enlace
+                @include enlac() 
+                               

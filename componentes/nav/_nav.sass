@@ -1,0 +1,115 @@
+@mixin navegadores($altura, $color)
+    width: 100%
+    height: $altura
+    background-color: $color
+
+@mixin hover()
+    border: solid 1px white
+    border-radius: 1px
+
+.nav
+    width: 100%
+    display: flex
+    box-sizing: border-box
+    flex-direction: column
+    &__top
+        @include navegadores(58px, #131921)
+        display: flex
+        align-items: center
+        justify-content: space-evenly
+        padding: 12px 8px 12px 8px
+        gap: 20px
+        .amazon
+            width: 104px
+            height: 40px
+        .amazon:hover
+            @include hover()
+        .enviar
+            display: flex
+            flex-direction: column
+            align-items: center
+            .venezuela
+                display: flex
+                flex-direction: row
+                img
+                    width: 20px
+                    height: 20px
+        .enviar:hover
+            @include hover()
+        div
+            display: flex
+        .navegador
+            display: flex
+            width: 700px
+            height: 50px
+            box-sizing: border-box
+            justify-content: center
+            align-items: center
+            input
+                width: 700px
+                height: 40px
+                position: relative
+            img
+                width: 40px
+                height: 40px
+                position: relative
+                padding: 6px
+                background-color: #f3a847
+                border: 0
+                border-radius: 0px 5px 5px 0px
+            select
+                background-color: #e6e6e6
+                border-radius: 5px 0px 0px 5px
+                border: 0
+                padding: 11px
+                color: #525452
+        .indent
+            display: flex
+            flex-direction: column
+        .indent:hover
+            @include hover()
+        .pedidos
+            display: flex
+            flex-direction: column
+        .pedidos:hover
+            @include hover()
+        .carrito
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: end  
+            img
+                width: 30px
+                height: 30px
+        .carrito:hover
+            @include hover()
+    &__sub
+        @include navegadores(34px, #232F3E)
+        display: flex
+        flex-direction: row
+        padding: 12px 14px 8px 14px
+        justify-content: start
+        align-items: center
+        gap: 20px
+        .todo
+            display: flex
+            gap: 2px
+            &__menu
+                position: relative
+                z-index: 10
+                width: 22px
+                height: 22px
+        .todo:hover
+            @include hover()
+        p
+            padding: 0px 0px 4px 0px
+            color: white
+            font-size: 15px
+            font-weight: 200
+        p:hover
+            @include hover()
+
+        
+        
+            
+    
